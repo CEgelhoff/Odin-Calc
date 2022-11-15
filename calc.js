@@ -17,3 +17,10 @@ function divide(g,h) {
 function operate(operator, x, y) {
      
 }
+
+function display(){
+    const display = document.getElementById("display");
+    const el = document.getElementsByClassName("nums");
+    el.addEventListener("click", () => {display.innerHTML = el.innerHTML; });
+    return el;
+}
