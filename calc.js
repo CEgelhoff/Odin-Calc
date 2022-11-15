@@ -18,9 +18,12 @@ function operate(operator, x, y) {
      
 }
 
-function display(){
-    const display = document.getElementById("display");
-    const el = document.getElementsByClassName("nums");
-    el.addEventListener("click", () => {display.innerHTML = el.innerHTML; });
-    return el;
+const numDisp = document.querySelector('#display');
+const el = document.querySelectorAll('nums');
+
+for (var i = 0; i < el.length; i++) {
+    el[i].addEventListener("click", function () {
+        console.log(el.textContent)
+    });
 }
+
